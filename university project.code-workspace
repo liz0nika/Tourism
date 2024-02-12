@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/Cinzel"
+		},
+		{
+			"path": "../../../Downloads/Poiret_One"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "university project"
+	}
+}
