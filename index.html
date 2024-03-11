@@ -3,12 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <title>Tourism Site</title>
+        <link rel="stylesheet" type="text/css"href="style.css">
+        <!-- стиль рівня документа для посилань -->
+        <style>
+            #main_to_about, #main_to_tours, #main_to_contact{
+                /* розмір */
+                font-size: 20px;
+
+                /* колір */
+                color:white;
+
+                 /* стиль */
+                font-style: normal;
+                font-weight: bolder;
+                font: arial;
+
+                /* міжрядковий інтервал*/
+                line-height: normal;
+
+                /* вирівнювання */
+                text-align: center;
+
+                 /* в один рядок */
+                display: inline-block;
+
+                /* відступ від лівого краю */
+                margin-left: 130px;
+            }
+            #link_to_contact{
+                /* колір */
+                color: rgb(48, 59, 53);
+
+                /* текст курсивом */
+                font-style: italic;
+            }
+        </style>
     </head>
-    
-    <body  style="background-color: #F8F2E9ff">
-        <h1><center><font size="5" color="green" face="Arial">Welcome to Adventure Expeditions!</font></center></h1>
-        <p style="text-align:center"><font face="Arial">Embark on unforgettable journeys with our exciting tours. Explore stunning landscapes, immerse yourself in diverse cultures, and create memories that will last a lifetime. Whether you're a thrill-seeker, nature lover, or cultural enthusiast, we have the perfect adventure waiting for you.
-            <br><em>Discover our wide range of tour options, learn about our company, explore our tour offers, and get in touch with us to start planning your next adventure today!</em></br></font></p>
-        <a href="full-shot-people-with-surf-boards.jpg"><center><img src="full-shot-people-with-surf-boards.jpg" width="600" height="600" ></center></a>
+    <!-- клас селектор -->
+    <body class="background_main" style="background-color: #F8F2E9ff">
+        <!-- селектор універсальний ідентифікатор до посилань-->
+        <div class="links">
+            <a id="main_to_about" href="about.html">About Us</a>
+            <a id="main_to_tours" href="tours.html">Tours</a>
+            <a id="main_to_contact" href="contact.html">Contact Us</a>
+        </div>
+        <!-- селектор універсальний ідентифікатор до заголовку-->
+        <h1 id="title_main" style="font-size:45px; color:rgb(48, 59, 53); text-align: center;">Welcome to Adventure Expeditions!</font></center></h1>
+        
+        <!-- внутрішній стиль до абзацу -->
+        <p class="text_main" style="font-size: 15px;color:black; font: arial; font-weight:normal;line-height: normal;text-align:center;"><font face="Arial">Embark on unforgettable journeys with our exciting tours. Explore stunning landscapes, immerse yourself in diverse cultures, and create memories that will last a lifetime. Whether you're a thrill-seeker, nature lover, or cultural enthusiast, we have the perfect adventure waiting for you.
+        <!-- посилання в тексті на іншу сторінку -->Discover our wide range of tour options, learn about our company, explore our tour offers, and <a id="link_to_contact" href="contact.html">get in touch with us</a> to start planning your next adventure today!</br></font></p>
+        
+        <!-- зображення, що відкривається в окремому вікні -->
+        <center><a href="full-shot-people-with-surf-boards.jpg" target="_blank"><img src="full-shot-people-with-surf-boards.jpg" width="600" height="600"></a></center>
     </body>
 </html>

@@ -3,110 +3,160 @@
     <head>
         <meta charset="UTF-8">
         <title>Tours</title>
+        <link rel="stylesheet" type="text/css"href="style.css">
         <style>
+            #tours_to_main, #tours_to_about, #tours_to_contact{
+                /* розмір */
+                font-size: 20px;
+
+                /* колір */
+                color:white;
+
+                 /* стиль */
+                font-style: normal;
+                font-weight: bolder;
+                font: arial;
+
+                /* міжрядковий інтервал*/
+                line-height: normal;
+
+                /* вирівнювання */
+                text-align: center;
+
+                 /* в один рядок */
+                display: inline-block;
+
+                /* відступ від лівого краю */
+                margin-left: 130px;
+            }
+            #link_machu_picchu,#link_sahara{
+                color:rgb(17, 21, 13);
+            }
         </style>
     </head>
-    <body>
-        <h1 style="text-align:center"><font font size="5" face="Arial">Explore Our Tours</font></h1>
-        <p style="text-align:center"><font face="Arial">Embark on an adventure of a lifetime with Adventure Expeditions! Choose from a diverse selection of tours designed to cater to every traveler's interests and preferences. Whether you're craving adrenaline-pumping activities, serene nature escapes, or immersive cultural experiences, we have the perfect itinerary for you.
-        <br>From trekking through remote wilderness to discovering ancient civilizations, our tours offer something for everyone. Join us as we explore breathtaking landscapes, encounter fascinating wildlife, and connect with local communities around the globe.</br>
-        <br>Browse our tour offerings below and start planning your next adventure with Adventure Expeditions!</br></font></p>
-        <h2 style="text-align:center"><font face="Arial">Popular Tours</font></h1>
-            <table border="1" cellspacing="0" cellpadding="5" align="center">
-                <tr style="background-color: #CCE4D3ff;">
-                  <th>Destination</th>
-                  <th>Date</th>
-                  <th>Days in Tour</th> 
-                  <th>Information</th>
+    <body class="background_tours">
+        <div class="links">
+            <a id="tours_to_main" href="index.html">Main</a>
+            <a id="tours_to_about" href="about.html">About Us</a>  
+            <a id="tours_to_contact" href="contact.html">Contact Us</a>
+        </div>
+        <h1 id="title_tours" style="font-size:45px; color:rgb(48, 59, 53); text-align: center;"><a href="#tours" style="color: rgb(17, 21, 13);">Explore Our Tours</a></h1>
+        <p class="text_tours" style="font-size: 15px;color:rgb(48, 59, 53); font: arial; font-weight:normal;line-height: normal;text-align:center;">Embark on an adventure of a lifetime with Adventure Expeditions! Choose from a diverse selection of tours designed to cater to every traveler's interests and preferences. Whether you're craving adrenaline-pumping activities, serene nature escapes, or immersive cultural experiences, we have the perfect itinerary for you. From trekking through remote wilderness to discovering ancient civilizations, our tours offer something for everyone. Join us as we explore breathtaking landscapes, encounter fascinating wildlife, and connect with local communities around the globe. Browse our tour offerings below and start planning your next adventure with Adventure Expeditions!</p>
+        <h3 id="popular_tours_title" style="text-align:center">Popular Tours</h3>
+        <table cellspacing="0" cellpadding="5">
+            <colgroup>
+                <col style="background-color: rgb(183, 191, 206);">
+                <col style="background-color: rgb(183, 191, 206);">
+                <col style="background-color: rgb(183, 191, 206);">
+                <col style="background-color: rgb(183, 191, 206);">
+            </colgroup>
+            <tr id="head_table_popular">
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Days in Tour</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td><img src="track.png" width="30" height="30"></td>
+                <td><img src="calendar-lines.png" width="30" height="30"></td>
+                <td><img src="plane-alt.png" width="30" height="30"></td>
+                <td><img src="question-square.png" width="30" height="30"></td>
+            </tr>
+            <tr>
+                <td>Machu Picchu</td>
+                <td> - </td>
+                <td>5 days</td>
+                <td><a id="link_machu_picchu" href="https://www.onthegotours.com/Peru/Machu-Picchu-Express-5-days?utm_source=google&utm_medium=google_nonbrand&utm_campaign=row_google_kw_tour_pages_-_high_quality&infinity=ict2%7Enet%7Egaw%7Ear%7E674174044529%7Ekw%7Etours+to+machu+picchu%7Emt%7Ee%7Ecmp%7E20555898125%7Eag%7E156573945547&gad_source=1&gclid=CjwKCAiAivGuBhBEEiwAWiFmYbRuvVpG5-utEsW7xm5kXU-Uy1f2gJf9lPi6Ulj-dCaJdzH9F-22qRoCfLYQAvD_BwE&_its=JTdCJTIydmlkJTIyJTNBJTIyMjM3MTNkZGYtYmM4NS00ZmQ0LTk4YzEtOTcwNWZjYWU3MjFlJTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcwODk3NzU1NH5sYW5kfjJfNTk1OTFfcHBjXzU2MmQ1ODUzM2UzNzgxMzFiNDQ5MTJhOTg1OGM3NzY3fnB0X2djbGlkfkNqd0tDQWlBaXZHdUJoQkVFaXdBV2lGbVliUnV2VnBHNS11dEVzVzd4bTVrWFUtVXkxZjJnSmY5bFBpNlVsai1kQ2FKZHpIOUYtMjJxUm9DZkxZUUF2RF9Cd0UlMjIlN0Q%3D">Machu Picchu Express - 5 days</a></td>
+            </tr>
+            <tr>
+                <td>Sahara</td>
+                <td> - </td>
+                <td>5 days</td>
+                <td><a id="link_sahara" href="https://www.tourradar.com/t/150261#p=2_">5 day trip: Sahara Fun Outdoor Experience</a></td>
+            </tr>
+        </table>
+        <h3 style="text-align:center; color:rgb(17, 21, 13) ;">Machu Picchu and the Inca Trail</h3>
+        <p id="text_machu_picchu" style="font-size: 15px;color:rgb(17, 21, 13); font: arial; font-weight:normal;line-height: normal;text-align:center;">Follow in the footsteps of ancient civilizations as you trek along the legendary Inca Trail to the iconic Machu Picchu. Explore archaeological ruins, traverse mountain passes, and camp under the stars as you uncover the mysteries of this UNESCO World Heritage site. Led by experienced guides, this adventure promises an unforgettable blend of history, nature, and culture.</font></p>
+        <center><a href="vertical-shot-mesmerizing-machu-pichu-mountain-foggy-day.jpg" target="_blank"><img id="machu_pichu_img" src="vertical-shot-mesmerizing-machu-pichu-mountain-foggy-day.jpg" width="400" height="400"></a></center>
+        <h3 style="text-align:center;color:rgb(17, 21, 13) ;">Sahara Desert Expedition</h3>
+        <p id="text_sahara" style="font-size: 15px;color:rgb(17, 21, 13); font: arial; font-weight:normal;line-height: normal;text-align:center;">Embark on an epic adventure across the vast expanse of the Sahara Desert. Traverse towering sand dunes, ancient caravan routes, and remote oases as you immerse yourself in the timeless beauty of this iconic desert landscape.</font></p>
+        <center><a href="beautiful-scenery-sand-dunes-desert-area-sunny-day.jpg" target="_blank"><img id="sahara_img" src="beautiful-scenery-sand-dunes-desert-area-sunny-day.jpg" width="400" height="400"></a></center>
+        <h2 id="tours" style="text-align:center; color:rgb(17, 21, 13) ;">Available Tours</h1>
+        <table border="1" cellspacing="0" cellpadding="5" align="center">
+            <thead>
+                <colgroup>
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                    <col style="background-color: rgb(183, 191, 206);">
+                </colgroup>
+                <tr id="head_table_available">
+                    <th>Tour Name</th>
+                    <th>Departure Date</th>
+                    <th>Duration</th>
+                    <th>Destination</th>
+                    <th>Difficulty Level</th>
+                    <th>Cost</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Amazon Adventure</td>
+                    <td>March 15, 2024</td>
+                    <td>10 days</td>
+                    <td rowspan="2">Amazon Rainforest, Brazil</td>
+                    <td>Moderate</td>
+                    <td>$2000</td>
+                    <td>5 spots left</td>
                 </tr>
                 <tr>
-                    <td><img src="4709383.png" width="70" height="70"></td>
-                    <td><img src="10691802.png" width="70" height="70"></td>
-                    <td><img src="201623.png" width="70" height="70"></td> 
-                    <td><img src="info-icon-2048x2048-tcgtx810.png" width="70" height="70"></td>
-                  </tr>
-                <tr>
-                  <td>Machu Picchu</td>
-                  <td> - </td> 
-                  <td>5 days</td>
-                  <td><a href="https://www.onthegotours.com/Peru/Machu-Picchu-Express-5-days?utm_source=google&utm_medium=google_nonbrand&utm_campaign=row_google_kw_tour_pages_-_high_quality&infinity=ict2%7Enet%7Egaw%7Ear%7E674174044529%7Ekw%7Etours+to+machu+picchu%7Emt%7Ee%7Ecmp%7E20555898125%7Eag%7E156573945547&gad_source=1&gclid=CjwKCAiAivGuBhBEEiwAWiFmYbRuvVpG5-utEsW7xm5kXU-Uy1f2gJf9lPi6Ulj-dCaJdzH9F-22qRoCfLYQAvD_BwE&_its=JTdCJTIydmlkJTIyJTNBJTIyMjM3MTNkZGYtYmM4NS00ZmQ0LTk4YzEtOTcwNWZjYWU3MjFlJTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcwODk3NzU1NH5sYW5kfjJfNTk1OTFfcHBjXzU2MmQ1ODUzM2UzNzgxMzFiNDQ5MTJhOTg1OGM3NzY3fnB0X2djbGlkfkNqd0tDQWlBaXZHdUJoQkVFaXdBV2lGbVliUnV2VnBHNS11dEVzVzd4bTVrWFUtVXkxZjJnSmY5bFBpNlVsai1kQ2FKZHpIOUYtMjJxUm9DZkxZUUF2RF9Cd0UlMjIlN0Q%3D">Machu Picchu Express - 5 days</a></td>
+                    <td>June 10, 2024</td>
+                    <td>10 days</td>
+                    <td>Moderate</td>
+                    <td>$2200</td>
+                    <td>Available</td>
                 </tr>
                 <tr>
-                  <td>Sahara</td>
-                  <td> - </td> 
-                  <td>5 days</td>
-                  <td><a href="https://www.tourradar.com/t/150261#p=2_">5 day trip: Sahara Fun Outdoor Experience</a></td>
+                    <td>Everest Base Camp</td>
+                    <td>April 10, 2024</td>
+                    <td>14 days</td>
+                    <td>Himalayas, Nepal</td>
+                    <td>Challenging</td>
+                    <td>$3000</td>
+                    <td>Fully booked</td>
                 </tr>
-                
-            </table>
-            <h2 style="text-align:center"><font face="Arial">Available Tours</font></h1>
-            <table border="1" cellspacing="0" cellpadding="5" align="center">
-                <thead>
-                    <tr>
-                        <th>Tour Name</th>
-                        <th>Departure Date</th>
-                        <th>Duration</th>
-                        <th>Destination</th>
-                        <th>Difficulty Level</th>
-                        <th>Cost</th>
-                        <th>Availability</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">Amazon Adventure</td>
-                        <td>March 15, 2024</td>
-                        <td>10 days</td>
-                        <td rowspan="2">Amazon Rainforest, Brazil</td>
-                        <td>Moderate</td>
-                        <td>$2000</td>
-                        <td>5 spots left</td>
-                    </tr>
-                    <tr>
-                        <td>June 10, 2024</td>
-                        <td>10 days</td>
-                        <td>Moderate</td>
-                        <td>$2200</td>
-                        <td>Available</td>
-                    </tr>
-                    <tr>
-                        <td>Everest Base Camp</td>
-                        <td>April 10, 2024</td>
-                        <td>14 days</td>
-                        <td>Himalayas, Nepal</td>
-                        <td>Challenging</td>
-                        <td>$3000</td>
-                        <td>Fully booked</td>
-                    </tr>
-                    <tr>
-                        <td>Serengeti Safari</td>
-                        <td>May 5, 2024</td>
-                        <td>7 days</td>
-                        <td>Serengeti National Park, Tanzania</td>
-                        <td>Easy</td>
-                        <td>$2500</td>
-                        <td>8 spots left</td>
-                    </tr>
-                    <tr>
-                        <td>Machu Picchu Trek</td>
-                        <td>June 20, 2024</td>
-                        <td>5 days</td>
-                        <td>Machu Picchu, Peru</td>
-                        <td>Moderate</td>
-                        <td>$1800</td>
-                        <td>Available</td>
-                    </tr>
-                    <tr>
-                        <td>Barrier Reef Dive</td>
-                        <td>July 10, 2024</td>
-                        <td>3 days</td>
-                        <td>Great Barrier Reef, Australia</td>
-                        <td>Moderate</td>
-                        <td>$1500</td>
-                        <td>Available</td>
-                    </tr>
-                </tbody>
-            </table>
-            
+                <tr>
+                    <td>Serengeti Safari</td>
+                    <td>May 5, 2024</td>
+                    <td>7 days</td>
+                    <td>Serengeti National Park, Tanzania</td>
+                    <td>Easy</td>
+                    <td>$2500</td>
+                    <td>8 spots left</td>
+                </tr>
+                <tr>
+                    <td>Machu Picchu Trek</td>
+                    <td>June 20, 2024</td>
+                    <td>5 days</td>
+                    <td>Machu Picchu, Peru</td>
+                    <td>Moderate</td>
+                    <td>$1800</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Barrier Reef Dive</td>
+                    <td>July 10, 2024</td>
+                    <td>3 days</td>
+                    <td>Great Barrier Reef, Australia</td>
+                    <td>Moderate</td>
+                    <td>$1500</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>

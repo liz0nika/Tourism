@@ -1,0 +1,348 @@
+/* INDEX.html */
+.background_main{
+    font-family:'Optima', sans-serif;
+    color:rgb(17, 21, 13);
+}
+#main_to_about{
+    background-color: #5B9293ff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 16px;
+}
+#main_to_tours{
+    background-color: #5B9293ff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+#main_to_contact{
+    background-color: #5B9293ff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:32px;
+    padding-right: 32px;
+    border-radius: 16px;
+}
+#title_main{
+    margin-top: 40px;
+}
+.text_main{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+/* ABOUT.html */
+.background_about{
+    font-family:'Optima', sans-serif;
+    color:rgb(17, 21, 13);
+}
+.links{ /*FOR ALL PAGES*/
+    text-align: center;
+    margin-top: 20px;
+}
+#about_to_main{
+    background-color: #25353Fff;
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+ #about_to_tours{
+    background-color: #25353Fff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+ #about_to_contact{
+    background-color: #25353Fff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:32px;
+    padding-right: 32px;
+    border-radius: 16px;
+}
+
+#title_about{
+    margin-top: 40px;
+}
+
+.text_about{
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+#cards {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items along the main axis */
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+#river_cruising_title, .river_cruising_text{
+    text-align: center;
+}
+.card_river, .card_land, .card_nearby {
+    flex: 1; /* Equal width for each card */
+    margin: 0 10px; /* Add some space between cards */
+    max-width: 300px; /* Limit maximum width of each card */
+}
+.card_river:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+.card_river {
+    align-self: center;
+    border-radius: 16px;
+    padding: 0.35px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    background-color: white;
+    max-width: 390px;
+    border-width: thin;
+  }
+.river_cruising_text{
+    font-style: italic;
+}
+#image_river_cruise{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+ .card_land:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+#image_land_adventure{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+#land_adventure_title, .land_adventure_text{
+    text-align: center;
+}
+.land_adventure_text{
+    font-style: italic;
+}
+  .card_land {
+    align-self: center;
+    border-radius: 16px;
+    padding: 0.35px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    background-color: white;
+    max-width: 390px;
+    border-width: thin;
+  }
+.card_nearby:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+#image_nearby_adventures{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+#nearby_adventures_title, .nearby_adventures_text{
+    text-align: center;
+}
+.nearby_adventures_text{
+    font-style: italic;
+}
+  .card_nearby {
+    align-self: center;
+    border-radius: 16px;
+    padding: 0.35px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    background-color: white;
+    max-width: 390px;
+    border-width: thin;
+  }
+#link_where_you_can_go{
+    background-color: #3D3C33ff;
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:45px;
+    padding-right: 45px;
+    border-radius: 16px;
+}
+
+.lists {
+	max-width: 360px;
+	margin: 0 auto;
+    margin-top: 40px;
+}
+
+ol,ul,dl {
+	list-style: none;
+	padding: 0;
+}
+
+li + li {
+	margin-top: 1rem;
+}
+
+li,dd {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background: #A1978Bff;
+	border-radius: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+
+/*TOURS>html*/
+.background_tours{
+    font-family:'Optima', sans-serif;
+    color:rgb(17, 21, 13);
+    background-color: #DEE3ECff ;
+}
+#tours_to_about{
+    background-color: #534F43ff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 16px;
+}
+#tours_to_main{
+    background-color: #534F43ff;
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+#tours_to_contact{
+    background-color: #534F43ff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:32px;
+    padding-right: 32px;
+    border-radius: 16px;
+}
+#title_tours{
+    margin-top: 40px;
+}
+.text_tours{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#popular_tours_title{
+    color:rgb(17, 21, 13) !important;
+}
+/* стиль до таблиці */
+table{
+    width: 80%;
+}
+table, tr, th, td{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    border:0.5px solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.5px;
+}
+th{
+    background-color: #8E98A2ff;
+
+}
+td{
+    padding: 15px;
+}
+
+#machu_pichu_img,#sahara_img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+#text_machu_picchu,#text_sahara{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/*CONTACT.html*/
+.background_tours{
+    font-family:'Optima', sans-serif;
+    color:#E2E0E7ff;
+}
+#contact_to_about{
+    background-color: #53492Eff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 16px;
+}
+#contact_to_main{
+    background-color: #53492Eff;
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+#contact_to_tours{
+    background-color: #53492Eff;
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 16px;
+}
+#title_contact{
+    margin-top: 40px;
+}
+.text_contact{
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
