@@ -92,8 +92,8 @@
 
 }
 #cards {
-    display: flex; /* Use flexbox */
-    justify-content: space-around; /* Distribute items along the main axis */
+    display: flex; 
+    justify-content: space-around; 
     padding-top: 40px;
     padding-bottom: 60px;
 }
@@ -101,9 +101,9 @@
     text-align: center;
 }
 .card_river, .card_land, .card_nearby {
-    flex: 1; /* Equal width for each card */
-    margin: 0 10px; /* Add some space between cards */
-    max-width: 300px; /* Limit maximum width of each card */
+    flex: 1; 
+    margin: 0 10px; 
+    max-width: 300px; 
 }
 .card_river:hover{
     box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
@@ -210,7 +210,6 @@ li + li {
 li,dd {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
 	background: #A1978Bff;
 	border-radius: 16px;
     padding-top: 10px;
@@ -344,5 +343,4 @@ td{
 .text_contact{
     padding-left: 60px;
     padding-right: 60px;
-
 }
