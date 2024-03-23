@@ -1,3 +1,21 @@
+/* 4 laba */
+b+i{
+    color:green;
+}
+
+.background_about .text_about .text{
+    font-style:italic;
+    color:purple;
+}
+.background_contact > .links > #contact_to_main, #contact_to_about, #contact_to_tours{
+    color:greenyellow;
+}
+
+
+/*3 laba*/
+a{
+    color:black;
+}
 /* INDEX.html */
 .background_main{
     font-family:'Optima', sans-serif;
