@@ -1,11 +1,74 @@
+/*5 laba*/
+
+span.adventure_expeditions{
+    color: green;
+    font-weight:bold;
+}
+
+div.text_about{
+    position: relative;
+}
+
+div.lists{
+    float:right;
+}
+/*псевдокласи для посилань*/
+
+/* курсор над посиланням */
+.card_river:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+.card_land:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+.card_nearby:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+/* невідвідуване посилання */
+#about_to_main:link {
+    color: purple;
+}
+
+/* відвідуване посилання */
+#about_to_tours:visited {
+    color: blue;
+}
+
+/* обране посилання */
+#about_to_contact:active {
+    color: yellowgreen;
+}
+
+/*стиль застосований до першого потомку свого батьківського елементу*/
+span b:first-child{
+    color:blue;
+}
+
+/*вставка картинки перед елементом*/
+#title_about::before{
+    content: url(plane-alt.png);
+}
+
+/*вставка картинки після елемента*/
+#title_about::after{
+    content: url(track.png);
+}
+
 /* 4 laba */
 b+i{
     color:green;
 }
 
-.background_about .text_about .text{
+.background_about .text{
     font-style:italic;
-    color:purple;
+    color:black;
+}
+.background_about > .text{
+    font-style:italic;
+    color:green;
 }
 .background_contact > .links > #contact_to_main, #contact_to_about, #contact_to_tours{
     color:greenyellow;
@@ -123,9 +186,9 @@ a{
     margin: 0 10px; 
     max-width: 300px; 
 }
-.card_river:hover{
+/* .card_river:hover{
     box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
-}
+} */
 .card_river {
     align-self: center;
     border-radius: 16px;
@@ -146,9 +209,7 @@ a{
     height: 300px;
     align-self: center;
 }
- .card_land:hover{
-    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
-}
+
 
 #image_land_adventure{
     border-radius: 50%;
@@ -173,9 +234,7 @@ a{
     max-width: 390px;
     border-width: thin;
   }
-.card_nearby:hover{
-    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
-}
+
 
 #image_nearby_adventures{
     border-radius: 50%;
