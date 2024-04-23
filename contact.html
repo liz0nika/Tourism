@@ -29,7 +29,39 @@
                 /* відступ від лівого краю */
                 margin-left: 130px;
             }
+            #leavefeedback{
+                margin-top: 20px;
+                align-items: center;
+                appearance: none;
+                background-color: #FCFCFD;
+                border-radius: 4px;
+                border-width: 0;
+                box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+                box-sizing: border-box;
+                color: #36395A;
+                cursor: pointer;
+                display: inline-flex;
+                height: 48px;
+                justify-content: center;
+                line-height: 1;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                transition: box-shadow .15s;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow,transform;
+                font-size: 18px;
+            }
+
+            .white-text {
+                color: white;
+                text-align: center;
+            }
         </style>
+        <!-- <script src="script.js"></script> -->
     </head>
     <body class="background_contact" style="background-color: #587575ff;">
         <div class="links">
@@ -45,8 +77,36 @@
         City, State, Zip Code</br>
         <br>Phone: 555-555-5555 Email: info@adventureexpeditions.com</br>
         <br>Follow us on social media for the latest updates and travel inspiration! We look forward to hearing from you and helping you create unforgettable memories on your next journey!</br></font></p>
+        <script>
+            var parentElement = document.getElementById('text_contact');
+            var newElement = document.createElement('p');
+            newElement.textContent = 'Below you can leave your feedback';
+            parentElement.after(newElement);
+
+            var Element_prepend = document.createElement('p');
+            Element_prepend.textContent = 'Our information'
+            parentElement.prepend(Element_prepend)
+        </script>
         <center><iframe src = "https://worldexpeditions.com" width = "600" height = "400">
         Expedition Site
         </iframe></center>
+        <center><button id="leavefeedback" onclick="myFunction()">Leave Feedback</button></center>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+            let text;
+            let feedback = prompt("Leave Feedback:", "Your feedback");
+            if (feedback == null || feedback == "") 
+            {
+                text = "User cancelled the prompt.";
+            } 
+            else 
+            {
+                text = "Thank you for your feedback!";
+            }
+            document.getElementById("demo").innerHTML = text;
+            document.getElementById("demo").classList.add("white-text");
+            }
+        </script>
     </body>
 </html>
