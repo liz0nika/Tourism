@@ -59,20 +59,38 @@
     </head>
     <!-- клас селектор -->
     <body class="background_main" style="background-color: #F8F2E9ff">
-        <script>
-            document.write("Welcome!")
-        </script>
+
         <center><button id="change_color" onclick="changeBackgroundColor()">Change Background</button></center>
         <center><button id="to_page" onclick="to_other_page()">To Book trip</button></center>
         <center><button id="developer_info" onclick="showDeveloperInfo('Yelyzaveta', 'Borysenko')">Show Developer Info</button></center>
         <center><button id="dialog" onclick="customDialog()">Start Dialog</button></center>
         <!-- селектор універсальний ідентифікатор до посилань-->
-        <div class="links">
-            <a id="main_to_about" href="about.html">About Us</a>
-            <a id="main_to_tours" href="tours.html">Tours</a>
-            <a id="main_to_contact" href="contact.html">Contact Us</a>
+        <div id="links">
+            <button id="main_to_about" data-action="about">About Us</button>
+            <button id="main_to_tours" data-action="tours">Tours</button>
+            <button id="main_to_contact" data-action="contact">Contact Us</button>
         </div>
-        <!-- селектор універсальний ідентифікатор до заголовку-->
+        <script>
+            function handleMenuAction(action) {
+                switch (action) {
+                    case 'about':
+                        window.location.href = 'about.html';
+                        break;
+                    case 'tours':
+                        window.location.href = 'tours.html';
+                        break;
+                    case 'contact':
+                        window.location.href = 'contact.html';
+                        break;
+                }
+            }
+            document.getElementById('links').addEventListener('click', function(event) {
+                if (event.target.tagName === 'BUTTON') {
+                    var action = event.target.getAttribute('data-action');
+                    handleMenuAction(action);
+                }
+            });
+        </script>
 
         <h1 id="title_main" style="font-size:45px; color:rgb(48, 59, 53); text-align: center;">Welcome to Adventure Expeditions!</font></center></h1>
         <script>
@@ -104,8 +122,19 @@
         <center><button id="alert_help" onclick="myFunction()">Help</button></center>
         <script>
             function myFunction() {
-            alert("To search information about us click on the 'About Us'\nTo search tours click on the 'Tours'\nTo contact with us click on the 'Contact Us'");
+                alert("To search information about us click on the 'About Us'\nTo search tours click on the 'Tours'\nTo contact with us click on the 'Contact Us'");
             }
+            function handleMouseOut() {
+                document.getElementById("alert_help").textContent = "Help";
+            }
+
+            function handleMouseOver() {
+                document.getElementById("alert_help").textContent = "Really?";
+            }
+            // Призначення різних обробників подій за допомогою методу addEventListener
+            document.getElementById("alert_help").addEventListener("mouseout", handleMouseOut);
+            document.getElementById("alert_help").addEventListener("mouseover", handleMouseOver);
+            
         </script>
     </body>
 </html>

@@ -77,22 +77,36 @@
         <p class="text_tours" style="font-size: 15px;color:rgb(48, 59, 53); font: arial; font-weight:normal;line-height: normal;text-align:center;">Embark on an adventure of a lifetime with Adventure Expeditions! Choose from a diverse selection of tours designed to cater to every traveler's interests and preferences. Whether you're craving adrenaline-pumping activities, serene nature escapes, or immersive cultural experiences, we have the perfect itinerary for you. From trekking through remote wilderness to discovering ancient civilizations, our tours offer something for everyone. Join us as we explore breathtaking landscapes, encounter fascinating wildlife, and connect with local communities around the globe. Browse our tour offerings below and start planning your next adventure with Adventure Expeditions!</p>
         
         
-        
-        <center><button id="confirmation" onclick="myFunction()">Booking Confirmation</button></center>
+        <!-- через атрибут -->
+        <center><button id="confirmation" onclick="handleClick()">Booking Confirmation</button></center>
         <p id="demo"></p>
+
         <script>
-            function myFunction() {
-            var txt;
-            if (confirm("Would you like to book a trip with us?")) {
-                txt = "Thank you! Our manager will contact with you soon.";
-            } else {
-                txt = "Maybe later :(";
+            function handleMouseOut() {
+                document.getElementById("confirmation").textContent = "Booking Confirmation";
             }
-            document.getElementById("demo").innerHTML = txt;
-            document.getElementById("demo").classList.add("black-text");
+
+            function handleMouseOver() {
+                document.getElementById("confirmation").textContent = "Are you sure?";
             }
-            
-            document.getElementById("confirmation").textContent = "Book Now";
+
+            function handleClick() {
+                var txt;
+                if (confirm("Would you like to book a trip with us?")) {
+                    txt = "Thank you! Our manager will contact with you soon.";
+                } else {
+                    txt = "Maybe later :(";
+                }
+                document.getElementById("demo").innerHTML = txt;
+                document.getElementById("demo").classList.add("black-text");
+            }
+
+            //через властивість
+            document.getElementById("confirmation").onmouseover = handleMouseOver;
+
+            document.getElementById("confirmation").addEventListener("mouseout", handleMouseOut);
+
+
             document.getElementById("tours_to_main").innerHTML = "Home";
             document.getElementById("tours_to_about").outerHTML = '<a id="tours_to_about" href="about.html">About Company</a>';
         </script>

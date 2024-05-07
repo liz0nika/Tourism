@@ -149,6 +149,10 @@ a{
     font-family:'Optima', sans-serif;
     color:rgb(17, 21, 13);
 }
+#links{
+    text-align: center;
+    margin-top: 20px;
+}
 .links{ /*FOR ALL PAGES*/
     text-align: center;
     margin-top: 20px;
@@ -290,7 +294,7 @@ a{
     border-radius: 16px;
 }
 
-.lists {
+#lists {
 	max-width: 360px;
 	margin: 0 auto;
     margin-top: 40px;

@@ -32,14 +32,14 @@ function to_other_page(){
     window.location.href = "https://ua.trip.com/?locale=uk-ua"
 }
 
-function compareStrings(str1, str2) {
-    if (str1.length === str2.length) {
-        alert("Both strings are equal.");
-    } else if (str1.length > str2.length) {
-        alert("The first string is greater: " + str1);
-    } else {
-        alert("The second string is greater: " + str2);
-    }
-}
-compareStrings("abrakadabra", "heh")
+// function compareStrings(str1, str2) {
+//     if (str1.length === str2.length) {
+//         alert("Both strings are equal.");
+//     } else if (str1.length > str2.length) {
+//         alert("The first string is greater: " + str1);
+//     } else {
+//         alert("The second string is greater: " + str2);
+//     }
+// }
+// compareStrings("abrakadabra", "heh")
 

@@ -29,11 +29,30 @@
                 /* відступ від лівого краю */
                 margin-left: 130px;
             }
+            .highlighted {
+                background-color: green; 
+            }
         </style>
         <!-- <script src="script.js"></script> -->
     </head>
     <!-- клас селектор -->
     <body class ="background_about" style="background-color: rgb(248, 242, 234)">
+        <button data-toggle-id="leave-feedback">Leave feedback</button>
+        <form id="leave-feedback" hidden>
+            Your feedback: <input type="text">
+        </form>
+
+        <script>
+            document.addEventListener('click', function(event) {
+                let id = event.target.dataset.toggleId;
+                if (!id) return;
+                let elem = document.getElementById(id);
+                elem.hidden = !elem.hidden;
+            });
+        </script>
+
+
+
         <!-- селектор універсальний ідентифікатор до посилань-->
         <div class="links">
 
@@ -73,7 +92,7 @@
             </div>
         </div>
         <h2 style="text-align:center" id="tours"><a id ="link_where_you_can_go" href="tours.html" style="color: white; font-size:35px; font-family:'Optima', sans-serif;">Where you can go?</a></h2>
-        <div class="lists">
+        <div id="lists">
             <ol>
                 <li><a href="https://www.istockphoto.com/uk/search/2/image-film?phrase=Amazon%20Rainforest%2C%20Brazil" style="color: white;">Amazon Rainforest, Brazil</a></li>
                 <li><a href="https://www.istockphoto.com/uk/search/2/image-film?phrase=Serengeti%20National%20Park%2C%20Tanzania" style="color: white;">Serengeti National Park, Tanzania</a></li>
@@ -94,6 +113,21 @@
                 <dt>Bwindi Impenetrable Forest</dt>
                     <dd><a href="https://www.istockphoto.com/uk/search/2/image-film?phrase=Bwindi%20Impenetrable%20Forest%2C%20Uganda" style="color: white;">Bwindi Impenetrable Forest, Uganda</a></dd>
             </dl>
+            <script>
+                function highlight(element) {
+                    var highlightedItem = document.querySelector('.highlighted');
+                    if (highlightedItem) {
+                        highlightedItem.classList.remove('highlighted');
+                    }
+                    element.classList.add('highlighted');
+                }
+                var list = document.getElementById('lists');
+                list.addEventListener('click', function(event) {
+                    if (event.target.tagName === 'A') {
+                        highlight(event.target);
+                    }
+                });
+            </script>
         </div>
         <center><a href="medium-shot-woman-with-surf-board.jpg"><img id="about_bottom_page"src="medium-shot-woman-with-surf-board.jpg" width="400" height="400"></a></center>
     </body>
